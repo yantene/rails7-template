@@ -1,0 +1,40 @@
+# Insert the following lines into the Gemfile.
+#
+# gem "rubocop", require: false
+# gem "standard", require: false
+# gem "rubocop-performance", require: false
+# gem "rubocop-rails", require: false
+# gem "rubocop-rspec", require: false
+# gem "rubocop-rake", require: false
+
+require:
+  - standard
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-rake
+
+inherit_gem:
+  standard: config/base.yml
+
+AllCops:
+  DisabledByDefault: true
+  NewCops: enable
+  Exclude:
+    - ./bin/**/*
+    - ./vendor/**/*
+    - ./db/schema.rb
+
+Rails:
+  Enabled: true
+
+# Trailing Comma
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
