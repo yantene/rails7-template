@@ -1,0 +1,26 @@
+{
+  "name": "Development",
+  "dockerComposeFile": [
+    "compose.yaml",
+  ],
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "zsh": {
+        "path": "zsh",
+      },
+    },
+  },
+  "extensions": [
+    "KoichiSasada.vscode-rdbg",
+  ],
+  "remoteEnv": {
+    // cf. https://linuxtut.com/en/0c515929aba4093e7c47/
+    "BUNDLE_APP_CONFIG": null,
+  },
+  "forwardPorts": [],
+  "remoteUser": "dev-user",
+  "initializeCommand": "${localWorkspaceFolder}/.devcontainer/initialize.sh",
+  "postCreateCommand": ".devcontainer/post_create.sh",
+}
