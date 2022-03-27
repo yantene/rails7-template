@@ -14,6 +14,7 @@
   },
   "extensions": [
     "KoichiSasada.vscode-rdbg",
+    "misogi.ruby-rubocop",
   ],
   "remoteEnv": {
     // cf. https://linuxtut.com/en/0c515929aba4093e7c47/
