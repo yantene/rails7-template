@@ -15,6 +15,7 @@
   "extensions": [
     "KoichiSasada.vscode-rdbg",
     "misogi.ruby-rubocop",
+    "castwide.solargraph",
   ],
   "remoteEnv": {
     // cf. https://linuxtut.com/en/0c515929aba4093e7c47/
